@@ -417,6 +417,11 @@ nav.navbar.row {
         margin: 10px auto 0;
     }
 }
+ul.site-navigation.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    padding-right: 10%;
+}
 
 .nav > li > .dropdown a {
     background: none!important;
@@ -1075,6 +1080,10 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .social {        
+    display: flex;
+    justify-content: space-between;
     }
 }
 
