@@ -1257,6 +1257,16 @@ h4 {
     p {
         font-size: 16px;
     }
+    .hero-bloc-text {
+        font-size: 37px;
+    }
+    .navbar-toggle {
+        margin: 10px 10px 0 0;
+        border: 0px;
+    }
+    .bloc-sm {
+        padding: 30px 50px;
+    }
 }
 
 @media (max-width: 767px) {
