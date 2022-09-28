@@ -1256,6 +1256,9 @@ h4 {
         display: flex;
         flex-direction: row;
     }
+    img.img-responsive.portfolio-thumb {
+        padding: 3% 20%;
+    }
     
 }
 
