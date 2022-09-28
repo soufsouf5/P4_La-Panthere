@@ -165,10 +165,6 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
-}
-
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
     color: rgba(255, 255, 255, 1);
@@ -262,10 +258,6 @@ a:hover {
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
-}
-
-.l-bloc .navbar-toggle .icon-bar {
-    color: rgba(0, 0, 0, .6);
 }
 
 .d-bloc .panel .btn-wire,
@@ -386,20 +378,6 @@ nav.navbar.row {
     background: transparent;
 }
 
-.navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
-}
-
-.navbar-toggle:hover {
-    background: transparent!important;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
-}
-
 .nav-invert .navbar .nav {
     float: left;
 }
@@ -449,13 +427,19 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+ul.site-navigation.nav.navbar-nav {
+    margin-top: 35px;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
 .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
     display: table;
     content: " ";
 }
 @media (min-width: 768px) {
     .site-navigation {
-        position: absolute;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
@@ -491,10 +475,6 @@ ul {
         margin-right: 0px;
         margin-top: 20px;
     }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
     .navbar-nav {
         float: left;
         margin: 0;
@@ -511,9 +491,6 @@ ul {
         border-top: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
-    }
-    .navbar-toggle {
-        display: none;
     }
     .navbar-collapse.collapse {
         display: block!important;
@@ -537,13 +514,6 @@ ul {
         float: left;
         margin: 0;
     }
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
     .bloc-xxl, .bloc-xl, .bloc-lg {
         padding: 40px 0;
     }
@@ -557,7 +527,7 @@ ul {
     .col-sm-6 {
         padding: 1% 2%;
     }
-
+    
 }
 
 
@@ -813,7 +783,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .text-center {
@@ -1071,6 +1041,9 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    header {
+        height: 85px;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1135,7 +1108,6 @@ h4 {
         float: left;
     }
     .site-navigation {
-        position: absolute;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
@@ -1175,22 +1147,6 @@ h4 {
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
-    }
-    .nav-invert .navbar-toggle {
-        float: left;
-        margin-left: 10px;
-    }
-    .navbar-toggle {
-        position: relative;
-        padding: 9px 10px;
-        margin-top: 8px;
-        margin-right: 15px;
-        margin-bottom: 8px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        left: 260px;
     }
     .bloc-lg {
         padding: 100px 50px;
@@ -1249,8 +1205,8 @@ h4 {
         height: 320px;
     }
     .social {        
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
     .row.row-no-gutters.social {
         display: flex;
@@ -1280,10 +1236,6 @@ h4 {
     .hero-bloc-text {
         font-size: 37px;
     }
-    .navbar-toggle {
-        margin: 10px 10px 0 0;
-        border: 0px;
-    }
     .bloc-sm {
         padding: 30px 50px;
     }
@@ -1297,7 +1249,7 @@ h4 {
         display: flex;
         flex-direction: row;
     }
-
+    
 }
 
 @media (max-width: 767px) {
