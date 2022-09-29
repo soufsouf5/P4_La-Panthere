@@ -1043,6 +1043,8 @@ h4 {
 @media (max-width: 767px) {
     header {
         height: 85px;
+        display: flex;
+        justify-content: space-between;
     }
     .page-container {
         overflow-x: hidden;
@@ -1079,11 +1081,11 @@ h4 {
     }
     .nav > li {
         margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
         text-align: left;
         padding-left: 15px;
         width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
@@ -1100,6 +1102,18 @@ h4 {
     .navbar-nav {
         float: left;
         margin: 0;
+    }
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important;
+    }
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
     .col-sm-12 {
         width: 100%;
