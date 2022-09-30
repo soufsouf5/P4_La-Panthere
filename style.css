@@ -429,6 +429,8 @@ ul {
 }
 ul.site-navigation.nav.navbar-nav {
     margin-top: 35px;
+    display: flex;
+    flex-direction: row;
 }
 header {
     display: flex;
@@ -967,7 +969,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
