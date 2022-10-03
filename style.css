@@ -1079,6 +1079,12 @@ h4 {
         width: 100%;
         margin: 0.5px -74px;
     }
+    .row.row-no-gutters.social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
 }
 .nav > li {
     margin-top: 0;
@@ -1221,7 +1227,7 @@ form {
 }
 .social {        
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .row.row-no-gutters.social {
     display: flex;
@@ -1274,11 +1280,25 @@ img.img-responsive.portfolio-thumb {
     ul.site-navigation.nav.navbar-nav {
         margin-top: 15px;
     }
-    
+    .social {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+@media (max-width:320px) {
+    .navbar-brand img {
+        max-height: 40px;
+        width: 145px;
+    }
+    .row.row-no-gutters.social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
