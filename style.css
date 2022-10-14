@@ -25,6 +25,7 @@ a:hover {
 .citation {
     font-style: italic;
     font-size: 16px;
+    padding-top: 10%;
 }
 .header{
     width: 100%;
@@ -287,7 +288,7 @@ a {
     margin-left: -15px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    align-items: center;
 }
 .row.row-no-gutters.social {
     display: block;
@@ -424,11 +425,9 @@ ul {
     padding-inline-start: 40px;
 }
 ul.site-navigation.nav.navbar-nav {
-    margin-top: -15px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin-left: 815px;
 }
 header {
     display: flex;
@@ -440,14 +439,6 @@ header {
 }
 .col-xs-12.col-md-8.col-md-offset-2.text-center {
     max-width: 100%;
-}
-img.center-block.image-resize-mode {
-    margin-left: 235px;
-}
-.col-sm-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
 }
 @media (min-width: 768px) {
     .site-navigation {
@@ -1314,12 +1305,5 @@ img.img-responsive.portfolio-thumb {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-}
-@media (min-width: 576px){
-    .col-sm-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 100%;
     }
 }
